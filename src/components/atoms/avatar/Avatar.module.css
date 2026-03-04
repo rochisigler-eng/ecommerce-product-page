@@ -1,0 +1,9 @@
+.avatar {
+  width: 3rem;
+  height: 3rem;
+}
+.avatar:hover {
+  border: 2px solid hsl(26, 100%, 55%);
+  border-radius: 50%;
+  cursor: pointer;
+}/*# sourceMappingURL=Avatar.module.css.map */

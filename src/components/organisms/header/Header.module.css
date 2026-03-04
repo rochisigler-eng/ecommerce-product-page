@@ -1,0 +1,16 @@
+header {
+  display: flex;
+  justify-content: space-between;
+  height: 7rem;
+  margin-bottom: 2rem;
+}
+header .headerLeft {
+  display: flex;
+  align-items: flex-end;
+  gap: 2rem;
+}
+header .headerRight {
+  display: flex;
+  align-items: flex-end;
+  gap: 2rem;
+}/*# sourceMappingURL=Header.module.css.map */

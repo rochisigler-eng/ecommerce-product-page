@@ -1,0 +1,24 @@
+import Icon from "../../atoms/icon/Icon"
+import Menu from "../../molecules/menu/Menu"
+import Cart from "../../molecules/cart/Cart"
+import Avatar from "../../atoms/avatar/Avatar"
+import styles from "./Header.module.scss"
+
+const Header = () => {
+  return (
+    <header>
+      <div className={styles.headerLeft}>
+        <Icon />
+        <Menu
+        menuPages={["Collections", "Men", "Women", "About", "Contact"]}
+        />
+      </div>
+      <div className={styles.headerRight}>
+        <Cart />
+        <Avatar avatar="../../../images/image-avatar.png"/>
+      </div>
+    </header>
+  )
+}
+
+export default Header;

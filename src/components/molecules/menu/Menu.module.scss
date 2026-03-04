@@ -1,0 +1,22 @@
+nav {
+    ul {
+        display: flex;
+        list-style-type: none;
+        li {
+            cursor: pointer;
+            padding: 0 1rem;
+
+            &:hover {
+                text-decoration: underline;
+                text-decoration-thickness: 3px;
+                text-decoration-color: hsl(26, 100%, 55%);
+                text-underline-offset: 2.1rem;
+            }
+
+            a {
+                text-decoration: none;
+                color: hsl(219, 9%, 45%);
+            }
+        }
+    }
+}

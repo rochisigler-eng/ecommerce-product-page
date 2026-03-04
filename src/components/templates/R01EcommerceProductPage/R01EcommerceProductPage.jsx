@@ -1,15 +1,18 @@
 import ImageDisplay from "../../organisms/image-display/ImageDisplay"
-import Navigation from "../../organisms/navigation/Navigation"
+import Header from "../../organisms/header/Header"
 import Product from "../../organisms/product/Product"
-
+import styles from './R01EcommerceProductPage.module.scss'
 
 const R01EcommerceProductPage = () => {
   return (
-    <div>
-      <Navigation />
+    <>
+      <Header />
+      <hr />
+      <div className={styles.productContainer}> 
       <ImageDisplay />
       <Product />
-    </div>
+      </div>
+    </>
   )
 }
 
