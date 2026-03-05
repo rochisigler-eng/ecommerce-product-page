@@ -1,8 +1,8 @@
-
+import styles from './Product.module.scss'
 
 const Product = () => {
   return (
-    <div>Product</div>
+    <div className={styles.productContainer}>Product</div>
   )
 }
 

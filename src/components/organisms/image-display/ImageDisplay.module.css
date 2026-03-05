@@ -1,1 +1,28 @@
-/*# sourceMappingURL=ImageDisplay.module.css.map */
+.imageDisplayContainer {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+  padding: 3rem;
+}
+.imageDisplayContainer .large {
+  width: 70%;
+  height: 80%;
+  border-radius: 1rem;
+}
+.imageDisplayContainer .thumbnail {
+  display: flex;
+  gap: 2rem;
+  width: 70%;
+  height: 20%;
+}
+.imageDisplayContainer .thumbnail .product {
+  border-radius: 10px;
+}
+.imageDisplayContainer .thumbnail .product:hover {
+  cursor: pointer;
+  opacity: 0.5;
+  border: 2px solid hsl(26, 100%, 55%);
+}/*# sourceMappingURL=ImageDisplay.module.css.map */
