@@ -1,0 +1,14 @@
+.cartContainer {
+    position: relative;
+    cursor: pointer;
+    
+    .cartDisplay {
+        position: absolute;
+        left: -7rem;
+        top: 2rem;
+        width: 15rem;
+        height: 12rem;
+        background-color: #fff;
+        box-shadow: 0 0 5px #555;
+    }
+}
