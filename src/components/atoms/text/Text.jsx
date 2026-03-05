@@ -1,8 +1,8 @@
 import styles from './Text.module.scss'
 
-const Text = ({content}) => {
+const Text = ({text}) => {
   return (
-    <p className={styles.para}>{content}</p>
+    <p className={styles.para}>{text}</p>
   )
 }
 
