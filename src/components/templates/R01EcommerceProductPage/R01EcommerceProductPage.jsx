@@ -29,7 +29,10 @@ const R01EcommerceProductPage = () => {
             }]
           }
         />
-        <Product />
+        <Product
+          discount= {50}
+          price={250}        
+        />
       </div>
     </>
   )
