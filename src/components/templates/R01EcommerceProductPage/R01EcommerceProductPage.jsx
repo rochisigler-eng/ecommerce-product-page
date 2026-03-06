@@ -6,7 +6,9 @@ import styles from './R01EcommerceProductPage.module.scss'
 const R01EcommerceProductPage = () => {
   return (
     <>
-      <Header />
+      <Header
+      src= "../../../images/icon-cart.svg"
+      />
       <hr />
       <div className={styles.productContainer}>
         <ImageDisplay
@@ -31,7 +33,8 @@ const R01EcommerceProductPage = () => {
         />
         <Product
           discount= {50}
-          price={250}        
+          price={250}
+          src= "../../../images/icon-cart.svg"        
         />
       </div>
     </>

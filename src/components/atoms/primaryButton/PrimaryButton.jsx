@@ -1,8 +1,8 @@
 
 
-const PrimaryButton = () => {
+const PrimaryButton = ({src}) => {
   return (
-    <div>PrimaryButton</div>
+    <button><img src={src} alt="cart icon" />Add to cart</button>
   )
 }
 

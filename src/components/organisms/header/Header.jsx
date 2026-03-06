@@ -4,7 +4,7 @@ import Cart from "../../molecules/cart/Cart"
 import Avatar from "../../atoms/avatar/Avatar"
 import styles from "./Header.module.scss"
 
-const Header = () => {
+const Header = ({src}) => {
   return (
     <header>
       <div className={styles.headerLeft}>
@@ -14,7 +14,9 @@ const Header = () => {
         />
       </div>
       <div className={styles.headerRight}>
-        <Cart />
+        <Cart
+        src = {src}
+        />
         <Avatar avatar="../../../images/image-avatar.png"/>
       </div>
     </header>

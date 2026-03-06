@@ -1,9 +1,14 @@
 import PrimaryButton from "../../atoms/primaryButton/PrimaryButton"
 import QuantityButton from "../../atoms/quantityButton/QuantityButton"
 
-const AddToCart = () => {
+const AddToCart = ({src}) => {
   return (
-    <div>AddToCart</div>
+    <div>
+      <QuantityButton />
+      <PrimaryButton
+      src = {src}
+      />
+    </div>
   )
 }
 

@@ -2,13 +2,13 @@ import Text from "../../atoms/text/Text"
 import { useState } from 'react'
 import styles from './Cart.module.scss'
 
-const Cart = () => {
+const Cart = ({src}) => {
   const [display, setDisplay] = useState(false)
 
   
   return (
     <div className={styles.cartContainer} onClick={()=>setDisplay(!display)}>
-      <img src="../../../images/icon-cart.svg" alt="Cart Icon" />
+      <img src={src} alt="Cart Icon" />
       {
         display
         ? <div className={styles.cartDisplay}>
