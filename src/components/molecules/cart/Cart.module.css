@@ -2,6 +2,17 @@
   position: relative;
   cursor: pointer;
 }
+.cartContainer .productQuantity {
+  position: absolute;
+  text-align: center;
+  border-radius: 50%;
+  width: 1rem;
+  height: 1rem;
+  background-color: hsl(26, 100%, 55%);
+  font-size: 0.8rem;
+  top: -0.6rem;
+  left: 0.9rem;
+}
 .cartContainer .cartDisplay {
   position: absolute;
   left: -7rem;
@@ -14,21 +25,9 @@
 .cartContainer .cartDisplay .cartInfo {
   display: flex;
   flex-direction: column;
-  position: relative;
   height: 80%;
   justify-content: space-between;
   padding: 1rem;
-}
-.cartContainer .cartDisplay .cartInfo .productQuantity {
-  position: absolute;
-  text-align: center;
-  border-radius: 50%;
-  width: 1rem;
-  height: 1rem;
-  background-color: hsl(26, 100%, 55%);
-  font-size: 0.8rem;
-  top: -4.8rem;
-  left: 8rem;
 }
 .cartContainer .cartDisplay .cartInfo .productInfo {
   display: flex;

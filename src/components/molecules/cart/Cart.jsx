@@ -10,6 +10,11 @@ const Cart = ({ src, quantity, hasItems, priceTotal, item }) => {
   return (
     <div className={styles.cartContainer} onClick={() => setDisplay(!display)}>
       <img src={src} alt="Cart Icon" />
+      {hasItems
+      ?
+      <div className={styles.productQuantity}> {quantity}</div>
+      :null
+    }
       {
         display
           ? <div className={styles.cartDisplay}>
@@ -19,12 +24,11 @@ const Cart = ({ src, quantity, hasItems, priceTotal, item }) => {
               hasItems
                 ?
                 <div className={styles.cartInfo}>
-                  <div className={styles.productQuantity}>{quantity}</div>
                   <div className={styles.productInfo}>
                     <div><img className={styles.cartImage} src="../../../images/image-product-1-thumbnail.jpg" alt="product image" /></div>
                     <div>
                       <p className={styles.itemTitle}>{item}</p>
-                      <p className={styles.priceInfo}>${priceTotal} x {quantity} <span className={styles.total} style={{ fontWeight: "bold" }}>${total}</span> </p>
+                      <p className={styles.priceInfo}>${priceTotal.toFixed(2)} x {quantity} <span className={styles.total} style={{ fontWeight: "bold" }}>${total.toFixed(2)}</span> </p>
                     </div>
                   </div>
                   <div className={styles.checkout}>
