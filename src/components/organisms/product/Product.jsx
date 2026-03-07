@@ -2,15 +2,20 @@ import styles from './Product.module.scss'
 import Details from '../../molecules/details/Details'
 import AddToCart from '../../molecules/add-to-cart/AddToCart'
 
-const Product = ({discount, price, src}) => {
+const Product = ({priceDiscount, price, priceTotal, src, item, setQuantity, quantity, setHasItems}) => {
   return (
     <div className={styles.productContainer}>
       <Details
-      discount={discount}
+      priceDiscount={priceDiscount}
       price={price}
+      priceTotal={priceTotal}
+      item={item}
       />
       <AddToCart
       src = {src}
+      setQuantity = {setQuantity}
+      quantity={quantity}
+      setHasItems={setHasItems}
       />
     </div>
   )

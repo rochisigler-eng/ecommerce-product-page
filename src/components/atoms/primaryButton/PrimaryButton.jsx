@@ -1,8 +1,15 @@
 import styles from './PrimaryButton.module.scss'
 
-const PrimaryButton = ({src}) => {
+const PrimaryButton = ({src, text, onClick}) => {
   return (
-    <button className={styles.addToCartBtn}><img className={styles.cartIcon} src={src} alt="cart icon" />Add to cart</button>
+    <button onClick={onClick}
+    className={styles.addToCartBtn}>
+      {src
+      ? 
+    <img className={styles.cartIcon} src={src} alt="cart icon" />
+    : null
+    }
+      {text}</button>
   )
 }
 

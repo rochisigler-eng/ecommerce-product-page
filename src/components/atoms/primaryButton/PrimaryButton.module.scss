@@ -7,8 +7,11 @@
     border: none;
     border-radius: 10px;
     cursor: pointer;
+    
     .cartIcon {
-        fill: black;
         padding: 0 .5rem 0 0 ;
+    }
+    &:hover {
+        background-color: rgba(255, 125, 26, 0.7);
     }
 }

@@ -1,20 +1,20 @@
 import Price from "../../atoms/price/Price"
 
 
-const Cost = ({ discount, price }) => {
-  let withDiscount = (price*discount)/100
+const Cost = ({ priceDiscount, price, priceTotal }) => {
+  
 
   return (
     <>
     <div style={{display: "flex", alignItems: "center", gap: "1rem", padding: "1rem 0"}}>
       <Price
-        num={withDiscount}
+        num={priceTotal}
         size={"2rem"}
         fontWeight={"600"}
         type = {"priceTag"}
       />
       <Price
-      num= {discount}
+      num= {priceDiscount}
       backgroundColor={"#000"}
       color={"#fff"}
       type= {"percentage"}

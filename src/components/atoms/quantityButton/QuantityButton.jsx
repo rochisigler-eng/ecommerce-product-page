@@ -1,8 +1,8 @@
 import { useState } from 'react'
 import styles from './QuantityButton.module.scss'
 
-const QuantityButton = () => {
-  const [quantity, setQuantity] = useState(1)
+const QuantityButton = ({setQuantity, quantity}) => {
+  
 
   const substractQuantity=()=>{
     quantity > 0 ? setQuantity(quantity-1) : null

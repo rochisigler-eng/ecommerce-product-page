@@ -6,8 +6,47 @@
   position: absolute;
   left: -7rem;
   top: 2rem;
-  width: 15rem;
-  height: 12rem;
+  width: 18rem;
+  height: 14rem;
   background-color: #fff;
   box-shadow: 0 0 5px #555;
+}
+.cartContainer .cartDisplay .cartInfo {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  height: 80%;
+  justify-content: space-between;
+  padding: 1rem;
+}
+.cartContainer .cartDisplay .cartInfo .productQuantity {
+  position: absolute;
+  text-align: center;
+  border-radius: 50%;
+  width: 1rem;
+  height: 1rem;
+  background-color: hsl(26, 100%, 55%);
+  font-size: 0.8rem;
+  top: -4.8rem;
+  left: 8rem;
+}
+.cartContainer .cartDisplay .cartInfo .productInfo {
+  display: flex;
+  gap: 0.5rem;
+}
+.cartContainer .cartDisplay .cartInfo .productInfo .cartImage {
+  width: 4rem;
+  height: 3rem;
+  border-radius: 10px;
+}
+.cartContainer .cartDisplay .cartInfo .productInfo .itemTitle {
+  color: #555;
+  font-size: 0.8rem;
+}
+.cartContainer .cartDisplay .cartInfo .productInfo .priceInfo .total {
+  padding: 0 0 0 0.5rem;
+}
+.cartContainer .cartDisplay .cartInfo .checkout {
+  display: flex;
+  justify-content: center;
 }/*# sourceMappingURL=Cart.module.css.map */
