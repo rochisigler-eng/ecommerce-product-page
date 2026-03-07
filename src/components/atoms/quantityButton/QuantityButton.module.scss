@@ -1,0 +1,21 @@
+.quantityContainer {
+    display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 10px;
+        background-color: hsl(223, 64%, 98%);
+    .quantityBtn {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 1rem;
+        color:  hsl(26, 100%, 55%);
+        font-size: 1.5rem;
+        font-weight: 600;
+        cursor: pointer;
+       
+    }
+    .quantity {
+        padding: 0 1.5rem;
+    }
+}

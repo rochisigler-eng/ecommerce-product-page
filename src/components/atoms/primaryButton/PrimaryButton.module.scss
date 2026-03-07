@@ -1,0 +1,14 @@
+.addToCartBtn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: .3rem 3.5rem;
+    background-color: hsl(26, 100%, 55%);
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    .cartIcon {
+        fill: black;
+        padding: 0 .5rem 0 0 ;
+    }
+}

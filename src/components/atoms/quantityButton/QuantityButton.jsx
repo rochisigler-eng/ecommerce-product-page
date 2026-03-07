@@ -1,13 +1,18 @@
 import { useState } from 'react'
+import styles from './QuantityButton.module.scss'
 
 const QuantityButton = () => {
-    const [quantity, setQuantity] = useState(1)
+  const [quantity, setQuantity] = useState(1)
+
+  const substractQuantity=()=>{
+    quantity > 0 ? setQuantity(quantity-1) : null
+  }
 
   return (
-    <div style={{display: "flex", justifyContent: "center", alignItems:"center", padding: ".5rem", backgroundColor: "hsl(220, 14%, 75%)"}}>
-    <span style={{color:"hsl(26, 100%, 55%)", fontSize: "1.5rem", fontWeight: "600"}} onClick={()=>setQuantity(quantity-1)}>-</span>
-    <p style={{padding: "0 1.5rem"}}>{quantity}</p>
-    <span style={{color:"hsl(26, 100%, 55%)", fontSize: "1.5rem", fontWeight: "600"}} onClick={()=>setQuantity(quantity+1)}>+</span>
+    <div className={styles.quantityContainer}>
+      <img className={styles.quantityBtn} src="../../../images/icon-minus.svg" alt="minus icon" onClick={() => substractQuantity()} />
+      <p className={styles.quantity}>{quantity}</p>
+      <img className={styles.quantityBtn} src="../../../images/icon-plus.svg" alt="plus icon" onClick={() => setQuantity(quantity + 1)} />
     </div>
   )
 }
