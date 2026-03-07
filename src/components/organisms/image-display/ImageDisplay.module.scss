@@ -6,23 +6,34 @@
     align-items: center;
     gap: 2rem;
     padding: 3rem;
+
     .large {
         width: 70%;
         height: 80%;
         border-radius: 1rem;
     }
+
     .thumbnail {
         display: flex;
         gap: 2rem;
         width: 70%;
         height: 20%;
+
         .product {
             border-radius: 10px;
+
             &:hover {
                 cursor: pointer;
                 opacity: 0.5;
                 border: 2px solid hsl(26, 100%, 55%);
             }
+
+        }
+
+        .active {
+            opacity: 0.5;
+            border: 2px solid hsl(26, 100%, 55%);
+            border-radius: 10px;
         }
     }
 

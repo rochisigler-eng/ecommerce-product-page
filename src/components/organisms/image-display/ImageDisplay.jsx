@@ -3,6 +3,12 @@ import styles from './ImageDisplay.module.scss'
 
 const ImageDisplay = ({products}) => {
   const [image, setImage] = useState("../../../images/image-product-1.jpg")
+  const [imageId, setImageId] = useState(0)
+
+  const handleClick=(id)=>{
+    setImageId(id)
+  }
+
   return (
     <div className={styles.imageDisplayContainer}>
       <img src={image} alt="Product Image" className={styles.large} />
@@ -14,8 +20,11 @@ const ImageDisplay = ({products}) => {
           key={index}
           src={product.thumbnail} 
           alt="Product Image"
-          className={`${styles.product}`}
-          onClick={()=> setImage(product.src)}
+          className={imageId === index? `${styles.active}`: `${styles.product}`}
+          onClick={(e)=>{
+            setImage(product.src)
+            handleClick(index)
+          } }
           />
           
         ))
