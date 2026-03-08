@@ -1,0 +1,67 @@
+body {
+  position: relative;
+}
+body .lightbox {
+  position: fixed;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(0, 0, 0, 0.5);
+  width: 100vw;
+  height: 100vh;
+  inset: 0;
+}
+body .lightbox .container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1.5rem;
+  width: 60%;
+}
+body .lightbox .container .closeContainer {
+  display: flex;
+  justify-content: flex-end;
+  width: 60%;
+}
+body .lightbox .container .closeContainer .close {
+  width: 2rem;
+  height: 2rem;
+  cursor: pointer;
+}
+body .lightbox .container .arrowContainer {
+  position: fixed;
+  display: flex;
+  justify-content: space-between;
+  width: 33%;
+}
+body .lightbox .container .arrowContainer .arrowBackground {
+  background-color: #fff;
+  border-radius: 50%;
+  width: 3rem;
+  height: 3rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+body .lightbox .container .large {
+  width: 50%;
+  height: 30%;
+  border-radius: 10px;
+}
+body .lightbox .container .smallContainer {
+  display: flex;
+  justify-content: center;
+  gap: 0.5rem;
+}
+body .lightbox .container .smallContainer .small {
+  width: 7rem;
+  height: 7rem;
+  border-radius: 10px;
+}
+body .lightbox .container .smallContainer .small:hover {
+  cursor: pointer;
+  opacity: 0.5;
+  border: 2px solid hsl(26, 100%, 55%);
+}/*# sourceMappingURL=Lightbox.module.css.map */

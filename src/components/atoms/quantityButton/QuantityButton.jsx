@@ -5,7 +5,7 @@ const QuantityButton = ({setQuantity, quantity}) => {
   
 
   const substractQuantity=()=>{
-    quantity > 0 ? setQuantity(quantity-1) : null
+    quantity > 1 ? setQuantity(quantity-1) : null
   }
 
   return (
