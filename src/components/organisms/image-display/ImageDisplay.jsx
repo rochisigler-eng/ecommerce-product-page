@@ -12,38 +12,41 @@ const ImageDisplay = ({ products }) => {
   }
 
   return (
+    <>
+      <div className={styles.imageDisplayContainer}>
+        <img src={image} alt="Product Image" className={styles.large} onClick={() => setLightboxDisplay(!lightboxDisplay)} />
+        <div className={styles.thumbnail}>
 
-    <div className={styles.imageDisplayContainer}>
+          {
+            products.map((product, index) => (
+
+              <img
+                key={index}
+                src={product.thumbnail}
+                alt="Product Image"
+                className={imageId === index ? `${styles.active}` : `${styles.product}`}
+                onClick={() => {
+                  setImage(product.src)
+                  handleClick(index)
+                }}
+              />
+
+            ))
+          }
+        </div>
+      </div >
       {lightboxDisplay
         ?
         <Lightbox
-        products={products}
+          products={products}
+          setLightboxDisplay = {setLightboxDisplay}
+          lightboxDisplay = {lightboxDisplay}
+          imageId = {imageId}
+          setImageId = {setImageId} 
         />
-        :
-        <>
-          <img src={image} alt="Product Image" className={styles.large} onClick={() => setLightboxDisplay(true)} />
-          <div className={styles.thumbnail}>
-            
-            {
-              products.map((product, index) => (
-
-                <img
-                  key={index}
-                  src={product.thumbnail}
-                  alt="Product Image"
-                  className={imageId === index ? `${styles.active}` : `${styles.product}`}
-                  onClick={() => {
-                    setImage(product.src)
-                    handleClick(index)
-                  }}
-                />
-
-              ))
-            }
-          </div>
-        </>
-      }
-    </div >
+        : null
+        }
+    </>
   )
 }
 

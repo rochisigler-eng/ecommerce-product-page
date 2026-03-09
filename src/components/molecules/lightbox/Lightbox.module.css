@@ -53,15 +53,20 @@ body .lightbox .container .large {
 body .lightbox .container .smallContainer {
   display: flex;
   justify-content: center;
-  gap: 0.5rem;
+  gap: 2rem;
+  width: 50%;
+  height: 20%;
 }
 body .lightbox .container .smallContainer .small {
-  width: 7rem;
-  height: 7rem;
   border-radius: 10px;
 }
 body .lightbox .container .smallContainer .small:hover {
   cursor: pointer;
   opacity: 0.5;
   border: 2px solid hsl(26, 100%, 55%);
+}
+body .lightbox .container .smallContainer .active {
+  opacity: 0.9;
+  border: 2px solid hsl(26, 100%, 55%);
+  border-radius: 10px;
 }/*# sourceMappingURL=Lightbox.module.css.map */

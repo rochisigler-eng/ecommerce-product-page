@@ -30,11 +30,13 @@ body {
                     cursor: pointer;
                 }
             }
+
             .arrowContainer {
                 position: fixed;
                 display: flex;
                 justify-content: space-between;
                 width: 33%;
+
                 .arrowBackground {
                     background-color: #fff;
                     border-radius: 50%;
@@ -43,10 +45,8 @@ body {
                     display: flex;
                     justify-content: center;
                     align-items: center;
-                    cursor: pointer;   
-                    .arrow {
+                    cursor: pointer;
 
-                    }
                 }
             }
 
@@ -59,11 +59,11 @@ body {
             .smallContainer {
                 display: flex;
                 justify-content: center;
-                gap: .5rem;
+                gap: 2rem;
+                width: 50%;
+                height: 20%;
 
                 .small {
-                    width: 7rem;
-                    height: 7rem;
                     border-radius: 10px;
 
                     &:hover {
@@ -71,6 +71,12 @@ body {
                         opacity: 0.5;
                         border: 2px solid hsl(26, 100%, 55%);
                     }
+
+                }
+                .active {
+                    opacity: 0.9;
+                    border: 2px solid hsl(26, 100%, 55%);
+                    border-radius: 10px;
                 }
             }
         }
