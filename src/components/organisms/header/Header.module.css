@@ -13,4 +13,9 @@ header .headerRight {
   display: flex;
   align-items: flex-end;
   gap: 2rem;
+}
+@media (max-width: 866px) {
+  header .headerLeft {
+    flex-direction: row-reverse;
+  }
 }/*# sourceMappingURL=Header.module.css.map */

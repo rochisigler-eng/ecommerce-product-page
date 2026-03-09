@@ -3,8 +3,11 @@ import Menu from "../../molecules/menu/Menu"
 import Cart from "../../molecules/cart/Cart"
 import Avatar from "../../atoms/avatar/Avatar"
 import styles from "./Header.module.scss"
+import { useState } from 'react'
 
 const Header = ({src, quantity, hasItems, priceTotal, item}) => {
+  const [menuOpen, setMenuOpen] = useState(false)
+
   return (
     <header>
       <div className={styles.headerLeft}>

@@ -2,6 +2,7 @@ nav {
     ul {
         display: flex;
         list-style-type: none;
+
         li {
             cursor: pointer;
             padding: 0 1rem;
@@ -18,5 +19,12 @@ nav {
                 color: hsl(219, 9%, 45%);
             }
         }
+
     }
+    @media (max-width: 870px) {
+        ul {
+            flex-direction: column;
+        }
+    }
+
 }

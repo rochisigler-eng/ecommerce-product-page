@@ -13,4 +13,10 @@ header {
         align-items: flex-end;
         gap: 2rem;
     }
+
+    @media (max-width: 866px) {
+        .headerLeft {
+            flex-direction: row-reverse;
+        }
+    }
 }

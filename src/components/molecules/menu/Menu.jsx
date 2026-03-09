@@ -1,6 +1,9 @@
 import styles from './Menu.module.scss'
+import { useState } from 'react'
 
 const Menu = ({ menuPages }) => {
+    const [menuOpen, setMenuOpen] = useState(false)
+
     return (
         <nav>
             <ul>
