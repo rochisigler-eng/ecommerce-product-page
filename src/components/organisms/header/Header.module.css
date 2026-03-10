@@ -9,6 +9,9 @@ header .headerLeft {
   align-items: flex-end;
   gap: 2rem;
 }
+header .headerLeft .hamburger {
+  display: none;
+}
 header .headerRight {
   display: flex;
   align-items: flex-end;
@@ -17,5 +20,9 @@ header .headerRight {
 @media (max-width: 866px) {
   header .headerLeft {
     flex-direction: row-reverse;
+  }
+  header .headerLeft .hamburger {
+    display: block;
+    cursor: pointer;
   }
 }/*# sourceMappingURL=Header.module.css.map */

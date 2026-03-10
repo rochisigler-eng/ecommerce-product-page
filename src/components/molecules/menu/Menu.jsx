@@ -1,11 +1,12 @@
 import styles from './Menu.module.scss'
 import { useState } from 'react'
+import closeIcon from "../../../../images/icon-close.svg"
 
-const Menu = ({ menuPages }) => {
-    const [menuOpen, setMenuOpen] = useState(false)
-
+const Menu = ({ menuPages, menuOpen, setMenuOpen }) => {
+    
     return (
-        <nav>
+        <nav className={menuOpen? `${styles.open}` : ""}>
+            <img src={closeIcon} alt="close icon" className={styles.close} onClick={()=> setMenuOpen(false)}/>
             <ul>
                 {
                     menuPages.map((page) => (
