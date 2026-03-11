@@ -6,4 +6,9 @@
         border-radius: 50%;
         cursor: pointer;
     }
+
+    @media (max-width:866px) {
+        width: 2rem;
+        height: 2rem;
+    }
 }

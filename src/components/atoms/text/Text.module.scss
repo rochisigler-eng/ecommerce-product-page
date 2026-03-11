@@ -1,4 +1,9 @@
 .para {
     color: hsl(219, 9%, 45%);
     padding: .5rem;
+
+    @media (max-width: 866px) {
+        font-size: 1rem;
+        padding: 0;
+    }
 }

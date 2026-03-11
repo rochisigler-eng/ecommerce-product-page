@@ -1,4 +1,10 @@
 .secondaryTitle {
   color: hsl(219, 9%, 45%);
   text-transform: uppercase;
+}
+@media (max-width: 866px) {
+  .secondaryTitle {
+    font-size: 0.8rem;
+    padding-bottom: 1rem;
+  }
 }/*# sourceMappingURL=SecondaryTitle.module.css.map */

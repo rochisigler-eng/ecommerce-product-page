@@ -7,10 +7,16 @@
   border: none;
   border-radius: 10px;
   cursor: pointer;
+  font-weight: bold;
 }
 .addToCartBtn .cartIcon {
   padding: 0 0.5rem 0 0;
 }
 .addToCartBtn:hover {
   background-color: rgba(255, 125, 26, 0.7);
+}
+@media (max-width: 866px) {
+  .addToCartBtn {
+    height: 3rem;
+  }
 }/*# sourceMappingURL=PrimaryButton.module.css.map */

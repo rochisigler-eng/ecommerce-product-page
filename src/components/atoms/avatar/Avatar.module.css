@@ -6,4 +6,10 @@
   border: 2px solid hsl(26, 100%, 55%);
   border-radius: 50%;
   cursor: pointer;
+}
+@media (max-width: 866px) {
+  .avatar {
+    width: 2rem;
+    height: 2rem;
+  }
 }/*# sourceMappingURL=Avatar.module.css.map */

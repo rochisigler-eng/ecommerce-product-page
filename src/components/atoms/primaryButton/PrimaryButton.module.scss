@@ -7,11 +7,16 @@
     border: none;
     border-radius: 10px;
     cursor: pointer;
+    font-weight: bold;
     
     .cartIcon {
         padding: 0 .5rem 0 0 ;
     }
     &:hover {
         background-color: rgba(255, 125, 26, 0.7);
+    }
+
+    @media (max-width: 866px) {
+        height: 3rem;
     }
 }

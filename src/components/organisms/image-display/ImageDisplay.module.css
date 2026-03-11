@@ -7,6 +7,9 @@
   gap: 2rem;
   padding: 3rem;
 }
+.imageDisplayContainer .mobileArrows {
+  display: none;
+}
 .imageDisplayContainer .large {
   width: 70%;
   height: 80%;
@@ -31,4 +34,39 @@
   opacity: 0.5;
   border: 2px solid hsl(26, 100%, 55%);
   border-radius: 10px;
+}
+@media (max-width: 866px) {
+  .imageDisplayContainer {
+    width: 100vw;
+    padding: 0;
+    justify-content: flex-start;
+    height: 37vh;
+    position: relative;
+  }
+  .imageDisplayContainer .thumbnail {
+    display: none;
+  }
+  .imageDisplayContainer .large {
+    width: 100vw;
+    border-radius: 0;
+    height: 100%;
+  }
+  .imageDisplayContainer .mobileArrows {
+    display: flex;
+    justify-content: space-between;
+    position: absolute;
+    top: 50%;
+    width: 100%;
+    padding: 0 0.5rem;
+  }
+  .imageDisplayContainer .mobileArrows .arrowMobileContainer {
+    background-color: #fff;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 2.5rem;
+    height: 2.5rem;
+    cursor: pointer;
+  }
 }/*# sourceMappingURL=ImageDisplay.module.css.map */

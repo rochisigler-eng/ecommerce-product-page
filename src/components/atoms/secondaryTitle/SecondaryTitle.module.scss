@@ -1,4 +1,9 @@
 .secondaryTitle {
     color: hsl(219, 9%, 45%);
     text-transform: uppercase;
+
+    @media (max-width:866px) {
+        font-size: .8rem;
+        padding-bottom: 1rem;
+    }
 }

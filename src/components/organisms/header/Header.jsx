@@ -12,8 +12,8 @@ const Header = ({ src, quantity, hasItems, priceTotal, item }) => {
   return (
     <header>
       <div className={styles.headerLeft}>
-        <img src={hamburgerIcon} alt="menu" className={styles.hamburger} onClick={() => setMenuOpen(true)} />
         <Icon />
+        <img src={hamburgerIcon} alt="menu" className={styles.hamburger} onClick={() => setMenuOpen(true)} />
         <Menu
           menuPages={["Collections", "Men", "Women", "About", "Contact"]}
           menuOpen={menuOpen}

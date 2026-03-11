@@ -20,18 +20,21 @@ header {
         gap: 2rem;
     }
 
-    @media (max-width: 866px) {
-
-
+    
+    @media (max-width:866px) {
+        padding: 1.5rem;
+        height: 4rem;
+        margin-bottom: 0;
         .headerLeft {
             flex-direction: row-reverse;
-
             .hamburger {
                 display: block;
                 cursor: pointer;
             }
-
-            
+        }
+        .headerRight {
+            gap: 1rem;
+            align-items: center;
         }
     }
 }
