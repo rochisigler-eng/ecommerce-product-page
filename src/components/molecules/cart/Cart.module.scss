@@ -1,7 +1,7 @@
 .cartContainer {
     position: relative;
     cursor: pointer;
-
+    z-index: 1;
     .productQuantity {
         position: absolute;
         text-align: center;
@@ -58,6 +58,13 @@
 
             }
 
+        }
+    }
+
+    @media (max-width: 866px) {
+        .cartDisplay {
+            width:15rem;
+            left: -9.5rem;
         }
     }
 }

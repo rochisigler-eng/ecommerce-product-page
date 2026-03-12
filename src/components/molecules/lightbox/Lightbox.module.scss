@@ -80,5 +80,9 @@ body {
                 }
             }
         }
+
+        @media (max-width: 866px) {
+            display: none;
+        }
     }
 }

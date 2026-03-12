@@ -5,7 +5,7 @@ import closeIcon from "../../../../images/icon-close.svg"
 const Menu = ({ menuPages, menuOpen, setMenuOpen }) => {
     
     return (
-        <nav className={menuOpen? `${styles.open}` : ""}>
+        <nav className={`${styles.menu}  ${menuOpen? styles.open:""}`}>
             <img src={closeIcon} alt="close icon" className={styles.close} onClick={()=> setMenuOpen(false)}/>
             <ul>
                 {

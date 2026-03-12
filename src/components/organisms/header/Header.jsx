@@ -14,11 +14,11 @@ const Header = ({ src, quantity, hasItems, priceTotal, item }) => {
       <div className={styles.headerLeft}>
         <Icon />
         <img src={hamburgerIcon} alt="menu" className={styles.hamburger} onClick={() => setMenuOpen(true)} />
-        <Menu
-          menuPages={["Collections", "Men", "Women", "About", "Contact"]}
-          menuOpen={menuOpen}
-          setMenuOpen= {setMenuOpen}
-        />
+          <Menu
+            menuPages={["Collections", "Men", "Women", "About", "Contact"]}
+            menuOpen={menuOpen}
+            setMenuOpen= {setMenuOpen}
+          />
       </div>
       <div className={styles.headerRight}>
         <Cart

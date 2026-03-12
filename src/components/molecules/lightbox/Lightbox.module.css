@@ -69,4 +69,9 @@ body .lightbox .container .smallContainer .active {
   opacity: 0.9;
   border: 2px solid hsl(26, 100%, 55%);
   border-radius: 10px;
+}
+@media (max-width: 866px) {
+  body .lightbox {
+    display: none;
+  }
 }/*# sourceMappingURL=Lightbox.module.css.map */

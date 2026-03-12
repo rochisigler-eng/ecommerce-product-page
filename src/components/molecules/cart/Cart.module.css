@@ -1,6 +1,7 @@
 .cartContainer {
   position: relative;
   cursor: pointer;
+  z-index: 1;
 }
 .cartContainer .productQuantity {
   position: absolute;
@@ -48,4 +49,10 @@
 .cartContainer .cartDisplay .cartInfo .checkout {
   display: flex;
   justify-content: center;
+}
+@media (max-width: 866px) {
+  .cartContainer .cartDisplay {
+    width: 15rem;
+    left: -9.5rem;
+  }
 }/*# sourceMappingURL=Cart.module.css.map */
